@@ -13,3 +13,5 @@ A web server written in C using the Socket API.
 ## To Build and Run
 - Use `make` to build
 - You can then invoke the server by `./sws <port> <directory>`
+- Once running, you can query your server using any HTTP/1.0-compliant client, even netcat, 
+i.e., `echo -e -n "GET / HTTP/1.0\r\n\r\n" | nc -u -s <source_ip> <host> <port>`
